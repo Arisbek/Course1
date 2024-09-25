@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <style>
+        .contact-form .success-message, .contact-form .error-message {
+            display: none;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .contact-form .success-message {
+            color: green;
+        }
+        .contact-form .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
+        <div class="success-message">Your message has been sent successfully!</div>
+        <div class="error-message">There was an error sending your message. Please try again.</div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="contact-form.js"></script>
+    <div><a href="../index.html">Home page</a></div>
+</body>
+</html>
