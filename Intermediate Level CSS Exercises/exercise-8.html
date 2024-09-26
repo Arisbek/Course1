@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        .gallery {
+            gap: 15px;
+        }
+        .gallery img {
+            width: calc(33.33% - 15px);
+        }
+        @media (max-width: 200px) {
+            .gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Image Gallery</h1>
+    <a href="../index.html">Home page</a>
+    <div class="gallery">
+        <img src="../img/spaceship.jpeg" alt="Image 1">
+        <img src="../img/photo_2024-09-26_15-24-27.jpg" alt="Image 2">
+        <img src="../img/picasso.jpeg" alt="Image 3">
+    </div>
+</body>
+</html>

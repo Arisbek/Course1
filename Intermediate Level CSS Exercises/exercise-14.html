@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: grey;
+            min-width: 100px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 15px 15px;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: white;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dropdown Menu</h1>
+    <a href="../index.html">Home page</a>
+    <section>
+        <div class="dropdown">
+            <button>Menu</button>
+            <div class="dropdown-content">
+                <a href="#">Pizza</a>
+                <a href="#">Hamburger</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

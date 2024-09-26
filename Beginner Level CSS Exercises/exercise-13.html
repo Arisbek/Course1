@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Navigation Bar</title>
+    <style>
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: grey;
+            color: white;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .content {
+            padding-top: 70px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Home page</a></li>
+            <li><a href="../Intermediate Level HTML Exercises/about.html">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="../Intermediate Level HTML Exercises/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Fixed Navigation Bar</h1>
+    </div>
+</body>
+</html>

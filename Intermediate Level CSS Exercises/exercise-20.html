@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Checkbox</title>
+    <style>
+        .checkbox-container input[type="checkbox"] { display: none; }
+        .checkbox-container label { position: relative; cursor: pointer; padding-left: 25px; }
+        .checkbox-container label:before, .checkbox-container label:after {
+            content: ''; position: absolute; left: 0; top: 0;
+        }
+        .checkbox-container label:before {
+            width: 9px; height: 16px; border: 2px solid black;
+        }
+        .checkbox-container label:after {
+            content: '✔'; color: green; display: none; background-color: yellow;
+        }
+        .checkbox-container input[type="checkbox"]:checked + label:after { display: block; }
+    </style>
+</head>
+<body>
+    <h1>Custom Checkbox</h1>
+    <a href="../index.html">Home page</a>
+    <div class="checkbox-container">
+        <input type="checkbox" id="customCheckbox">
+        <label for="customCheckbox">Check</label>
+    </div>
+</body>
+</html>
